@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trucker Signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+    .jumbotron{
+        background-color: cornflowerblue;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.php"><img src="http://placehold.it/30x30" width="30" height="30" class="d-inline-block align-top" alt="" />Company Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.php">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Privacy_and_Terms.html">Privacy Policy</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
+                <li class="nav-item p-2"><a class="nav-link" href="login.php">Log in</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="signup.php">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Sign UP here to become a smart trucker</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="card mb-5">
+                <div class="card-header">
+                    <h4>Vehical Owner's Details</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row form-group">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+			<fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-4 pt-0">Gender</legend>
+                                <div class="col-sm-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">Male</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+			<div class="form-group">
+                            <label for="adnumber">Aadhaar Number</label>
+                            <input type="text" class="form-control" id="adnumber" placeholder="Aadhaar Number">
+                        </div>
+			<div class="form-group">
+                            <label for="ctnumber">Contact</label>
+                            <input type="text" class="form-control" id="ctnumber" placeholder="Contact Number">
+                        </div>
+			<div class="row form-group">
+                            <div class="col">
+                                <label for="vhnumber">Vehicle Number</label>
+                                <input type="text" class="form-control" id="vhnumber" placeholder="Vehicle Number">
+                            </div>
+                            <div class="col">
+                                <label for="pannumber">PAN Number</label>
+                                <input type="text" class="form-control" id="pannumber" placeholder="PAN Number">
+                            </div>
+                        </div>
+			<div class="form-group row">
+		            <div class="col">
+                                <label for="inputvhtype">Vehicle Type</label>
+			    </div>
+			    <div class="col">
+                                <select id="inputvhtype" class="form-control">
+                                    <option selected>Select Truck Type</option>
+                                    <option>Tata Ace Zip</option>
+				    <option>Tata Ace</option>
+				    <option>Tata Super Ace</option>
+				    <option>Tata 407</option>
+				    <option>Truck 6 Wheel (14 Feet)</option>
+				    <option>Truck 6 Wheel (17 Feet)</option>
+				    <option>Truck (6 Wheel)</option>
+				    <option>Truck 10 Wheel (22 Feet)</option>
+				    <option>Truck 12 Wheel (22 Feet)</option>
+				    <option>Truck/Trailer 14 Wheel</option>
+				    <option>Trailer 18 Wheel</option>
+				    <option>Trailer 22 Wheel</option>
+                                </select>
+			    </div>
+			</div>
+                        <div class="form-group">
+                            <label for="addarea">Permanent Address</label>
+                            <textarea class="form-control" id="addarea" type="text"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Signup</button>
+                    </form>
+                </div>
+		<div class="panel-footer">Already have an account <a href="login.php">Login</a> here</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+		    <div class="card-header">
+		        <h4>Driver's Details</h4>
+		    </div>
+	            <div class="card-body">
+			<form>
+			    <div class="row form-group">
+                                <div class="col">
+				    <label for="drname">Driver's Name</label>
+                                    <input type="text" class="form-control" id="drname" placeholder="Driver's name">
+                                </div>
+			    </div>
+			    <div class="form-group">
+                                <div class="col">
+                                    <label for="lcnumber">License Number</label>
+                                    <input type="text" class="form-control" id="lcnumber" placeholder="License Number">
+                                </div>
+			    </div>
+			    <div class="form-group">
+                                <div class="col">
+                                    <label for="draadhaar">Driver's Aadhaar</label>
+                                    <input type="text" class="form-control" id="draadhaar" placeholder="Driver's Aadhaar">
+                                </div>
+                            </div>
+			    <div class="form-group">
+				<div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose Photo</label>
+                                </div>
+			    </div>
+			</form>
+                    </div>
+                </div>
+	    </div>	
+        </div>
+    </div>
+    <footer class="mt-5 navbar-dark bg-primary">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item p-2"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item p-2"><a class="nav-link" href="#">Links to social media</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h1>Footer</h1><br /><h3>Company Logo</h3>
+                <div class="py-3 navbar-text">
+                    © 2018 Copyright:
+                    <a href="#">Company Website Name</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item p-2"><a class="nav-link" href="Privacy_and_Terms.html">Privacy Policy and Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
